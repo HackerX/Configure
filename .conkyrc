@@ -1,0 +1,57 @@
+background yes
+imlib_cache_size 0
+use_xft yes
+#xftfont Droid Sans:size=9
+xftfont wqy-zenhei:size=10
+xftalpha 0.9
+update_interval 1.0
+total_run_times 0
+own_window yes
+own_window_type override
+own_window_transparent yes
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+double_buffer yes
+#minimum_size 220 5
+#maximum_width 150
+use_spacer right
+draw_shades no
+draw_outline no
+draw_borders no
+draw_graph_borders yes
+#stippled_borders 8
+# border_margin 0
+# border_width 1
+default_color FFFFFF
+color1 1793D1
+color2 535353
+color3 FFFFFF
+color4 D9D9D9
+color5 1793D1
+color6 red
+#alignment top_middle
+#alignment top_left
+#alignment top_right
+#alignment bottom_left
+alignment bottom_right
+#alignment none
+gap_x 0
+#gap_y 45
+gap_y 0
+no_buffers yes
+uppercase no
+cpu_avg_samples 2
+override_utf8_locale yes
+default_bar_size 45 20
+
+#${color3}CPU: ${color3}${cpu cpu0}% ${color5} | \
+#${color3}Home: ${color3}${fs_free_perc /home}% ${color4}free ${color5} | \
+#${color3}Root: ${color3}${fs_free_perc /root}% ${color4}free ${color5} | \
+#${color3}Loadavg: ${color3}${loadavg} ${color5} | \
+#${color3}Net: ${color4}Down ${color3}${downspeed enp6s0} ${color4}Up ${color3}${upspeed enp6s0} ${color5} | \
+
+TEXT
+#${color1}CPU ${offset 9}${color}${cpu cpu0}%${offset 9}${cpu cpu1}%${offset 9}${color1}HD ${offset 9}$color${fs_used_perc /}%${offset 9}${fs_used_perc /home}%${offset 9}${color1}RAM ${offset 9}${color}${memperc}%${offset 9}${color1}GML ${offset 9}${color}${execi 600 ~/.conky/gmail.py}${offset 9}${color1}UPD ${offset 9}${color}${execi 3600 aptitude search "~U" | wc -l | head}
+${color5}${voffset 10}${font Antipasto:pixelsize=12} \
+${color1}Ram: ${color3}${mem} ${memperc}%${color5} | \
+${color1}Net: ${color4}Down ${color3}${downspeed enp2s0}${color5}| \
+${color3}${time %Y}/${time %m}/${time %d} ${time %A} ${voffset -10}${font wqy-zenhei:pixelsize=28}${time %H}:${time %M} ${color5}${font}
