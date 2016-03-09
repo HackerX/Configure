@@ -57,7 +57,7 @@ Plugin 'vim-scripts/vim-easy-align'
 Plugin 'vim-scripts/surround.vim'
 " 状态栏增强
 Plugin 'vim-scripts/vim-airline'
-" mklokai配色
+" molokai配色
 Plugin 'tomasr/molokai'
 Plugin 'vim-scripts/Solarized'
 " 文件树
